@@ -18,7 +18,7 @@ class Line:
 
 class Kame(turtle.Turtle):
   def __init__(self):
-    surper(Kame,self).__init__()
+    super(Kame,self).__init__()
     self.shape('turtle')
     self.shapesize(2,2)
 
@@ -38,11 +38,11 @@ class Kame(turtle.Turtle):
         des_x = line.get_x(yy)
         des_y = yy
         turn_angle = self.heading() + rand_angle
-    elif elf.towards(-xx,-yy) > self.heading() >= self.towards(-xx,yy):
+    elif self.towards(-xx,-yy) > self.heading() >= self.towards(-xx,yy):
         des_x = -xx
         des_y = line.get_y(-xx)
         turn_angle = self.heading() - 0.5 * math.pi + rand_angle
-    elif elf.towards(xx,-yy) > self.heading() >= self.towards(-xx,-yy):
+    elif self.towards(xx,-yy) > self.heading() >= self.towards(-xx,-yy):
         des_x = line.get_x(-yy)
         des_y = -yy
         turn_angle = self.heading() - rand_angle
