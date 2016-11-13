@@ -57,3 +57,6 @@ class Kame(turtle.Turtle):
   def run(self):
       while True:
           self.hit_wall()
+
+  def click_on_move(self,x,y):
+      self.goto(x,y)
