@@ -17,6 +17,15 @@ for row in dataReader:
 
 #http://d.hatena.ne.jp/fgshun/20100226/1267150983
 
+data = [0,1,2,3,4,5]
+for i in data:
+    filename = str(i) + ".json"
+    f = open(filename,'w')
+    f.write(filename)
+    f.close
+
+
+
 #データを読み込む
 #ヘッダ情報を取得する
 #レコード情報を取得する
